@@ -1,0 +1,8 @@
+.modal-background {
+    background: rgba(41, 45, 50, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.modal-card {
+    border-radius: 15px;
+}

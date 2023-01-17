@@ -1,0 +1,272 @@
+.dashboard-plan {
+    max-width: 1152px;
+    height: auto;
+    border-radius: 4px;
+    margin: 42px auto 0;
+    padding: 0 16px;
+}
+
+.dashboard__card:not(:last-child) {
+    margin-left: 4px;
+}
+
+.dashboard__card {
+    background: #FFFFFF;
+    width: 100%;
+    height: 288px;
+    border-radius: 8px;
+}
+
+.dashboard__card.fixed_size {
+    max-width: 296px !important;
+    padding: 24px 8px;
+}
+
+.before-risk .dashboard__card:not(.fixed_size)>div {
+    padding-right: 62px;
+    padding-left: 62px;
+    /* max-width: 400px; */
+}
+
+.dashboard-plan .after-risk>div {
+    width: 100%;
+    max-width: 403px;
+    margin-left: 8px;
+}
+
+.dashboard-plan .after-risk>div:last-child {
+    width: 296px;
+    min-width: 236px;
+    margin-left: unset;
+}
+
+.dashboard-plan .asset-chart {
+    min-width: 104px;
+    height: 104px;
+    padding: 0 !important;
+}
+
+.dashboard-plan .percent {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-plan .invest-plan-items {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.dashboard__card.sm-height {
+    height: 74px;
+}
+
+.dashboard__card.md-height {
+    height: 238px;
+
+}
+
+.dashboard__card.lg-height {
+    height: 100%;
+
+}
+
+.dashboard__card__head {
+    background-color: #F1F1F1;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    color: #65676A;
+    font-weight: 700;
+}
+
+.dashboard__card__head span {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.vertical-steps {
+    margin-top: 28px;
+}
+
+.vertical-steps .completed>* {
+    color: #B6B6B6;
+
+}
+
+.vertical-steps>div:not(.completed, .active)>* {
+    color: #919CAB;
+}
+
+.vertical-steps>.active>* {
+    background: #DEF7F1;
+    border-radius: 8px;
+    color: #0FA083;
+    padding: 10px 8px;
+}
+
+.vertical-steps>.active svg>* {
+    stroke: #0FA083 !important;
+}
+
+.vertical-steps>.active~* svg>* {
+    stroke: #8F98A7 !important;
+}
+
+
+.vertical-steps>div {
+    position: relative;
+    z-index: 2;
+}
+
+.vertical-steps>div>* {
+    position: relative;
+    z-index: 2;
+    margin: 16px 0;
+    padding: 2px 8px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.vertical-steps svg {
+    margin-left: 8px;
+}
+
+.vertical-steps div:not(:last-child):before {
+    content: '';
+    height: 44px;
+    position: absolute;
+    top: 70%;
+    right: 16px;
+    z-index: 1;
+    border-right: 2px dotted #CED0D9;
+}
+
+.dashboard-plan .risk_shower {
+    position: relative;
+}
+
+.dashboard-plan .risk_shower> :last-child {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in .3s;
+    opacity: 0;
+}
+
+.dashboard-plan .risk_shower:hover> :last-child {
+    visibility: visible;
+    background: rgba(13, 13, 23, 0.5);
+    transition: all ease-in .3s;
+    opacity: 1;
+}
+
+.dashboard-plan .swiper {
+    height: 246px;
+    margin-bottom: 8px;
+}
+
+.dashboard-plan .swiper .swiper-slide {
+    background-position: center;
+    background-size: 1120px 100%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.dashboard-plan .swiper .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    background: #FFFFFF;
+    opacity: .6;
+    border-radius: 4px;
+    transition: width .3s ease-in-out;
+}
+
+.dashboard-plan .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 24px !important;
+    opacity: 1;
+}
+
+.vertical-steps .completed::before {
+    border-color: #96E9D8 !important;
+}
+
+@media screen and (min-width: 1440px) {}
+
+@media screen and (max-width: 610px) {
+
+    .dashboard-plan {
+        width: 100%;
+        padding: 0 8px 90px 8px;
+        margin: 8px auto 0;
+    }
+
+    .dashboard-plan>div.is-flex {
+        flex-direction: column;
+    }
+
+    .dashboard__card {
+        margin: 4px 0;
+        height: unset;
+        padding: 16px;
+    }
+
+    .dashboard__card.fixed_size {
+        max-width: unset !important;
+    }
+
+    .dashboard-plan .after-risk>div:last-child {
+        width: unset;
+    }
+
+    .dashboard-plan .after-risk>div {
+        max-width: unset;
+    }
+
+    .dashboard-plan .after-risk .dashboard__card {
+        padding: unset;
+    }
+
+    .dashboard-plan .after-risk .dashboard__card:not(.sm-height) {
+        height: unset;
+
+    }
+
+    .before-risk .dashboard__card:not(.fixed_size)>div {
+        padding-right: 0px;
+        padding-left: 0px;
+        /* max-width: 400px; */
+    }
+
+    .dashboard__invest__chart {
+        flex-direction: column-reverse;
+    }
+
+    .dashboard__invest__chart>.invest-plan-items {
+        padding: 0;
+        margin-top: 32px;
+    }
+
+    .dashboard__invest__chart>.asset-chart {
+        margin: auto;
+    }
+
+
+    .dashboard-plan .swiper .swiper-slide {
+        background-size: 195% 100%;
+    }
+
+
+    .dashboard-plan .swiper {
+        height: 193px;
+        margin-bottom: 8px;
+    }
+}

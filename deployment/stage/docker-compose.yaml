@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  panelweb:
+    networks:
+      - dockernet
+    image: repo.narvanventures.lc:9000/baloot-web-panel:stage-latest
+    ports:
+      - "8001:80"
+
+
+networks:
+    dockernet:
+      external: true

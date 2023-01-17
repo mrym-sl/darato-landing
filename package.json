@@ -2,7 +2,7 @@
     "name": "darato-landing",
     "version": "1.0.0",
     "main": "index.js",
-    "repository": "https://m.soleimani:gyRHacT_uj8Fx-QMrXye@git.narvanventures.com/baloot/baloot-web-panel.git",
+    "repository": "https://github.com/mrym-sl/darato-landing.git",
     "author": "maryam <maryamii.1767@gmail.com>",
     "license": "MIT",
     "dependencies": {

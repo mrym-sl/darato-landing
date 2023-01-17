@@ -1,0 +1,87 @@
+.me-chart-container {
+    width: 68%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.charts-contain {
+    border-bottom: 1.6px solid #EDEDED;
+    position: relative;
+}
+
+.charts-contain .left-border {
+    transform: rotate(90deg);
+}
+
+.charts-contain .left-line {
+    transform: rotate(90deg);
+    width: 189px !important;
+    height: 1px;
+    position: absolute;
+    left: -93.3px !important;
+    right: auto !important;
+    bottom: 92px;
+    margin: 0 !important;
+    background-color: #EDEDED;
+    color: #EDEDED;
+}
+
+.charts-contain hr.right-line {
+    transform: rotate(90deg);
+    width: 99.5px !important;
+    height: 0.7px;
+    position: absolute;
+    right: -32px!important;
+    bottom: 143.4px;
+    margin: 0 !important;
+    background-color: #EDEDED;
+    color: #EDEDED;
+}
+
+.charts-contain .custom-tooltip {
+    border-bottom: 1.6px solid #C7CBD3;
+    position: relative;
+    top: -30px !important;
+    /* left: 50px !important; */
+    z-index: 5500;
+}
+
+.recharts-tooltip-wrapper {
+    top: -50px !important;
+    /* left: 50px !important; */
+    /* transition: none !important;
+    transform: none !important; */
+    z-index: 100;
+}
+
+.recharts-surface {
+    overflow: visible !important;
+}
+
+@media screen and (max-width: 1280px) {
+    .me-chart-container {
+        width: 72%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .me-chart-container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .me-chart-container {
+        width: 92%;
+        /* margin-top: 21px; */
+        margin-bottom: 12px;
+        border-radius: 4px;
+        border: solid 0.3px #d5d5d5;
+        background-color: #fafbfb;
+    }
+}
+
+.highcharts-axis-title {
+    display: none;
+}
